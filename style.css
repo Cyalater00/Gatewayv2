@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    background: lightslategray;
+    height: 70px;
+    width: 100%;
+}
+label.logo{
+    color: black;
+    font-family: cursive;
+    font-size: 30px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    font-family: cursive;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: whitesmoke;
+    transition: .5s;
+}
+/* .hero {
+color: aquamarine;
+  } */
+  
+  .hero-text{
+    /* background-color: darkgray;
+    width: 100%;
+    height: 65%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: center;
+  }
+  
+  .hero-text h1{
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: cursive;
+  }
+  
+  .hero-text p{
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: cursive;
+  }
+  
+  button{
+    background: lightslategray;
+    border: 2px solid;
+    color: black;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s all ease;
+  }
+  button:hover{
+    background-color: lightcyan;
+  }
+
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    justify-content: center;
+    background-color: darkgray;
+    position: fixed;  
+    bottom: 0;
+    padding: 20px 20px;
+    width:100%;
+    height: 0px;
+    
+  }
+
+/* section{
+    background: url(Resturantbackground.avif) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+ } */
+
+.menu{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, 30%);
+    gap: 5%;
+    margin: 0 auto;
+    margin-top: 170px;
+    overflow: scroll;
+    /* border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    transition: .2s ease-in-out; */
+}
+.food-items{
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.food-items img{
+    position: relative;
+    height: 8em;
+    cursor: pointer;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    /* justify-content: center; */
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    /* font-family: cursive; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    justify-content: center;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 10%;
+
+}
+.price{
+    font-size: 10%;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: right;
+}
+.details>p{
+    font-family: cursive;
+    justify-content: center;
+    color: gray;
+    font-size: 8%;
+    line-height: 28px;
+    font-weight: bold;
+    align-self: stretch;
+}
+.details>button{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    height: 40%;
+    padding-bottom: 1rem;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    font-size: 7%;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.contact{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 155px;
+  }
+  
+  label{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+  }
+  
+  .contact-input{
+    margin-bottom: 10px;
+  }
+  
+  .contact-input > label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-input > input, .contact-input > textarea{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 8px;
+  }
+  
+  .contact-input > textarea{
+    height: 150px;
+    padding: 5px;
+  }
+  
+  /*this code controls the "send feed back" button on the contact page */
+  .contact-button{
+    padding: 10px 25px;
+    font-size: 18px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+
+ div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  } 
+
+/* .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+} */
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+        font-weight: 900;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+   /* .checkbtn{
+    display: block;
+   }  */
+   ul{
+    position: absolute;
+    width: 100%;
+    background: lightcyan;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 10px;
+   }
+    nav ul li a{
+    font-size: 15px;
+}
+   /* a:hover,a.active{
+    background: none;
+    color: lightseagreen;
+   } */
+   /* #check:checked ~ ul{
+    left: 0;
+   } */
+}
+@media(max-width: 500px){
+    .menu{
+        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+    }
+    label{
+        font-size: 3%;
+    }
+    .contact-button{
+        font-size: 3%;
+    }
+    .hero-text h1{
+        font-size: 1.5rem;
+        margin-top: 60%;
+    }
+   
+}
